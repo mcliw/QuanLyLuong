@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #06244c;
+  width: 250px;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 50px 80px;
+}
+
+.sidebar .sidebar-title {
+  padding: 12px;
+  text-align: center;
+  background-color: #004aad;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
+  border-bottom: 1px solid #000;
+}
+
+.sidebar .sidebar-item {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  background-color: #38b6ff;
+}
+
+.sidebar .sidebar-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  column-gap: 12px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  min-width: 500px;
+  background-color: #d7f0ff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.form-content h1 {
+  text-align: center;
+}
+
+.form-input {
+  margin: 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.form-input input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+  outline: none;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.btn {
+  background-color: #38b6ff;
+  outline: none;
+  border: none;
+  padding: 4px 30px;
+  font-size: 17px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form-btn button {
+  background-color: #38b6ff;
+  outline: none;
+  border: none;
+  padding: 12px 30px;
+  margin-top: 12px;
+  font-size: 17px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
