@@ -1,4 +1,3 @@
-// CapNhat.jsx
 import React, { useState } from 'react';
 
 export default function CapNhat({ onCapNhat }) {
@@ -17,6 +16,11 @@ export default function CapNhat({ onCapNhat }) {
     };
     // Gọi hàm onCapNhat và truyền đối tượng mới vào
     onCapNhat(newNhanVien);
+    // Đặt lại các giá trị trạng thái về chuỗi rỗng
+    setHoTen('');
+    setMaNhanVien('');
+    setChucVu('');
+    setQueQuan('');
   };
 
   return (
